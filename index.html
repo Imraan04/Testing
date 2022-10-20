@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+            $('#icon').click(function(){
+             $('ul').toggleClass('show');
+            });
+            });
+        </script>
+</head>
+<body>
+    <!-- Navagation Bar Starts HEre -->
+    <nav>
+        <div class="logo">
+            <img src="logo digi.png" alt="" </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Email Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+    </nav>
+    <!-- Navagation bar ends Here -->
+    <header>
+        <div class="container">
+            <form action="">
+                <img src="logo digi.png" alt="">
+                <h3>Fill the Details</h3>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Enter Your email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="(+91) Phone Number" required>
+                </div>
+                <!-- <div class="form-group">
+                    <input type="radio" name="male" placeholder="Enter Your email"><span class="text"> Female</span>
+                </div> -->
+                <div class="form-group">
+                    <input type="password" placeholder="Enter Your password" required>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>
